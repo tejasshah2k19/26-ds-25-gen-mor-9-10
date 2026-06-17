@@ -1,0 +1,58 @@
+                 DS
+
+Linear DS					NoN Linear Ds	
+Array					        Tree	
+Stack					        Graph	
+Queue						
+Linked List						
+						
+						
+*Searching						
+*Sorting						
+
+
+----------------------------------------------------------------
+
+1) space complexity 
+2) time complexity 
+
+#
+#
+
+void main(){
+
+    int a[15];//5 * 4 = 20 bytes  
+
+    for(int i=0;i<15;i++){  // 4 byte 
+        printf("Enter values");
+        scanf("%d",&a[i]); 
+    }
+
+}
+1 time    1 time 
+5 times   15 times 
+-------  -------------
+6         15 
+
+
+time complexity  :-  { number of instructions }
+space complexity :- {space occupied } 24 bytes minimum 
+
+--------------------------------------------------------------------------------------------------------
+
+
+Array  :  is a collection of same type of items having conitnue memory allocation.  
+
+         store n numbers of items under single data name 
+          50 
+          a[50] -> 50 copy 
+          having same type of data type 
+
+          int a[5]; //dimension -> 1D single dimension array 
+
+          to access an array we have to use index 
+          index starts with 0 and ends with SIZE-1 
+
+          1D 2D MD 
+
+          
