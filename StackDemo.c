@@ -39,26 +39,51 @@ void display()
     }
 }
 
+void peek()
+{
+    if (top == -1)
+    {
+        printf("\n STACK UnderFlow ... ");
+    }
+    else
+    {
+        printf(" %d ", stack[top]);
+    }
+}
+
+void peep(int location)
+{
+
+    if (top == -1)
+    {
+        printf("\n STACK UnderFlow ... ");
+    }
+    else
+    {
+        int index = top - location + 1;
+        printf(" %d ", stack[index]);
+    }
+}
+
 int main()
 {
 
     push(10);
     push(20);
     push(30);
-    display();//30 20 10 
+    peek();    // 30
+    display(); // 30 20 10
     push(40);
     push(50);
-    push(60);//OVERFLOW
-    display();//50 40 30 20 10 
+    push(60);  // OVERFLOW
+    display(); // 50 40 30 20 10
     pop();
     pop();
-    display();// 30 20 10 
+    display(); // 30 20 10
     pop();
     pop();
     pop();
-    pop();//UNDERFLOW
-    
-
+    pop(); // UNDERFLOW
 
     return 0;
 }
