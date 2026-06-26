@@ -55,4 +55,200 @@ Array  :  is a collection of same type of items having conitnue memory allocatio
 
           1D 2D MD 
 
+        insert(location,data);
+        removeItem(location);
+        display(); 
           
+----------------------------------------------------------------------------------------------
+
+complexity -> notation -> 
+
+1) Big O :- Worst CASE ---- upper bound --- very important  
+2) Omega :- BEST CASE  ---- lower bound 
+3) Theta :- AVG CASE   ----- avg 
+
+
+
+algo --> input 
+            ----> instructions 
+
+
+display() ---> 
+
+void display()
+{
+    printf("\nArray Elements : ");
+    for (int i = 0; i < SIZE; i++)
+    {
+        printf(" %d", arr[i]);
+    }
+}
+
+1    ---->   1 time  
+5    ---->   5  times 
+15   ---->   15 times
+3    ---->   3  times 
+50   ---->   50 times 
+
+input --> instructions --> n
+
+O(n)
+
+------------------------------------------------------------------------------
+
+for(i=1;i<=5;i++){
+    printf("%d ",i);
+}
+5 times 
+
+Big O ---> O(5) ? NO 
+constant --> O(1)
+
+------------------------------------------------------------------------------
+
+for(i=1;i<=size;i++){ //3   5   10
+    for(j=1;j<=size;j++){ //3   5   10
+        printf(" %d",j);
+    }
+    printf("\n");
+}
+n*n
+O(n*n)
+
+------------------------------------------------------------------------------
+
+for(i=1;i<=size;i++){ 
+    for(j=1;j<=size - i;j++){
+        printf("hi ");
+    }
+}  
+
+n  * n  
+
+------------------------------------------------------------------------------
+
+
+for(i = 1; i <= n; i++) {
+    for(j = 1; j <= i; j++) {
+        printf("*");
+    }
+}
+n*n
+
+
+for(i = 1; i <= n; i++) {
+    for(j = i; j <= n; j++) {
+        printf("*");
+    }
+}
+n*n 
+
+
+for(i = 1; i <= n; i++) {
+    for(j = 1; j <= i * i; j++) {
+        printf("*");
+    }
+}
+n*n*n
+
+
+for(i = 1; i <= n; i++) {
+    for(j = 1; j <= n; j = j * 2) {
+        printf("*");
+    }
+}
+n * log n 
+
+n log n 
+
+
+------------------------------------------------------------------------------
+
+Stack -> LiFo => Last In First Out 
+
+Book stack 
+plate stack 
+
+browser tab -> 
+
+Gallery ---> 1-1-2024  S 
+             24-6-2026 S 
+
+Call Log ---> History
+
+Whatsapp ---> chat --> 
+inbox --> gmail 
+
+function ---> recursion ---> 
+
+a+b-c*D 
+
+(([]))
+
+insert -> PUSH(data) 
+remove -> POP() 
+display -> display() 
+        -> PEEP-- 
+        -> PEEK() 
+
+								
+4								
+3								
+2	30	top						
+1	20							
+0	10							
+	stack							
+-1								
+			PUSH(10)			top++	stack[top] = num	
+			PUSH(20)			top++	stack[top] = num	
+			PUSH(30)			top++	stack[top] = num	
+								
+			display( ) 	30		for ( i=top ; I >= 0 ;i-- )		
+				20			pf stack[i] 	
+				10				
+								
+			PUSH(40)					
+								
+			POP( )	40				
+			POP( )	30				
+								
+			display( ) 	20				
+				10				
+								
+								
+								
+-----------------------------------------------------------------------------------								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
