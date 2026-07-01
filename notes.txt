@@ -219,6 +219,72 @@ display -> display()
 								
 -----------------------------------------------------------------------------------								
 
+expression => 
+        a + b 
+
+        a b => operand 
+        +  => operator 
+
+        inFix  => a + b  
+        preFix => +ab 
+        postFix => ab+ 
+
+
+        computer -> expression => a + b * c + ( z - x ) 
+
+    
+        
+        + -         1 
+        * /         2 
+        % ^ $       3 
+        ( )         4 
+
+
+        ( )        1        left to right 
+        % ^ $      2        right to left 
+        / *        3        left to right 
+        + -        4        left to right 
+
+    polish notation => preFix 
+    reverse polish notation => postFix 
+
+
+    e.g 
+     a + b - c 
+     +ab - c 
+     -+abc 
+
+
+    e.g 
+    a + b * c $ d + h $ g 
+
+    ++a*b$cd$hg 
+
+
+    postFix 
+    
+     a + b * c $ d + h $ g 
+ 
+    abcd$*+hg$+
+
+
+    A+B*(C^D-E)^(F+G*H)-I
+
+
+
+
+((A+B*C)-(D/E+F)*(G-H/I)+J)^(K+L-M*N)
+
+ 
+( +A*BC -  +/DEF  *  -G/HI  +J) ^(K+L-M*N)
+
+
+  ^+-+A*BC*+/DEF-G/HIJ-+KL*MN 
+
+----------------------------------------------------------------------------------
+
+
+
 
 
 
