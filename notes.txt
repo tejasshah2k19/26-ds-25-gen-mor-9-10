@@ -283,10 +283,41 @@ expression =>
 
 ----------------------------------------------------------------------------------
 
+1) find max element from stack. 
+    5 input 
+    10
+    30
+    20
+    50
+    40
+
+    max : 50 
+
+     
+     
+    20
+    30
+    10
+
+    max =   stack.pop(); // 40  
+
+    stack != empty 
+        int tmp = stack.pop() // 50 
+        tmp > max  max = tmp 
 
 
 
+2) find sum of all elements of stack. 
+    5 input 
+    10
+    30
+    20
+    50
+    40
 
+    sum : 150 
+
+      
 
 
 
