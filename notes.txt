@@ -317,7 +317,20 @@ expression =>
 
     sum : 150 
 
-      
+--------------------------------------------------------------------------------------------------------
+
+Queue : FiFo 
+OS: FCFS 
+
+
+ticket, billng , 
+
+printer -> 
+
+
+insert ===> enQueue 
+remove ===> deQueue 
+display ==> display 
 
 
 
