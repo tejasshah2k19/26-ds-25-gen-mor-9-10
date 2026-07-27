@@ -334,12 +334,87 @@ display ==> display
 
 ----------------------------------------------------------------------
 
+array => collection of same type of data , int : 
+      => continue 
+      => fixed in SIZE
+
+      size = 100 , use = 25 , waste = 75 
+      size = 100 , use =100 , more= 20 , over flow 
+
+
+      solution ? 
+ 
+
+java -> collection 
+
+    ArrayList :- 
+
+import java.util.ArrayList 
+
+    1) same like an  array -> collection of data 
+    2) you can access element using index in ArrayList like an array  
+    3) ArrayList is dynamic in nature for memory allocation 
+            3.1) add -> allocate -> grow 
+            3.2) remove -> release -> shrink 
+
+------------------------------------------------------------------------
+LeetCode ==> 
+        target sum => 
+        [1  20 304 10 506 78  9 89 ]  
+        target => 88 
+        true 
+        false 
+
+
+        targetSum(12); => false 
+        targetSum(88); => true 
+
+
+        [1  20 304 10 506 78  9 89 ] 
+                i   j 
+
+boolean findTarget(int targetSum){ 
+for(int i=0;i<SIZE;i++){
+    for(int j=i+1;j<SIZE;j++){
+            if(arr[i] + arr[j] == targetSum){
+                return true;
+            }
+    }
+}
+return false; 
+}
+
+
+sorted series =>  
+        [1  9  10  20 78 89 304 506 ]
+               l   h 
+        targetSum => 30 
+        [1  9  10  20 78 89 304 506 ]
+               l         h  
+        targetSum => 99
 
 
 
+boolean findTarget(int targetSum){ 
+    int low=0;
+    int high = SIZE-1 ;  
+    
+    while(low<=high){
+        int sum  = arr[low] + arr[high];    
+        if( sum == targetSum ){
+            return true; 
+        }else if( sum > targetSum){
+            high--; 
+        }else{
+            low++; 
+        }
+    }
+    return false; 
+}
 
 
 
+------------------------------------------------------------------------       
 
 
 
