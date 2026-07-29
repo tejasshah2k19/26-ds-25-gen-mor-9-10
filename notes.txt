@@ -417,10 +417,33 @@ boolean findTarget(int targetSum){
 ------------------------------------------------------------------------       
 
 
+void print(){
+    printf(" hi ");
+}
 
 
+void greet(){
+    printf(" Hello ");
+    greet();//recursion 
+}
+
+main(){
+    print();//call
+
+    greet(); // call  
+}
+
+recursion-> function calling itself... 
+
+BASE_CASE -> 
 
 
+why recursion ? 
+ ??
+ 
+
+
+------------------------------------------------------------------------       
 
 
 
