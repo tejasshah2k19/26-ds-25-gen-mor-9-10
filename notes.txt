@@ -445,11 +445,75 @@ why recursion ?
 
 ------------------------------------------------------------------------       
 
+void print(int cnt){
+
+
+
+}
+
+
+
+main(){
+
+    print(5); //1 2 3 4 5 
+}
+
+
+------------------------------------------------------------------------       
+
+void fun(int n){
+    if(n==0)
+        return; 
+    printf(" %d ",n);
+    fun(n-1);
+}
+
+
+fun(5); 
+
+
+fun(5) -> 5 
+    fun(4) -> 4
+        fun(3) -> 3 
+            fun(2) -> 2 
+                fun(1) -> 1 
+                  fun(0) -> X
 
 
 
 
 
+
+
+void fun(int n){
+    if(n==0)
+        return; 
+    fun(n-1);
+    printf(" %d ",n);
+}
+
+fun(5);
+
+
+fun(5) => n : 5 {pf n}
+    fun(4) => n : 4 { pf n }
+        fun(3) => pf 
+            fun(2) => pf 
+               fun(1) => pf 
+                fun(0) =>
+1 2 3 4 5 
+
+
+
+void fun(int n){
+    if(n==0)
+        return; 
+    printf(" %d ",n);//5 4 3 2 1 
+    fun(n-1);
+    printf(" %d ",n);//1 2 3 4 5
+}
+
+fun(5);
 
 
 

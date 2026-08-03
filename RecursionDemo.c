@@ -50,6 +50,7 @@ void banta(int count){
         banta(count); 
     }
 }
+
 void santabanta(int s,int e){
     
 }
