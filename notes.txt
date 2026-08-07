@@ -515,6 +515,98 @@ void fun(int n){
 
 fun(5);
 
+-----------------------------------------------------------------------
+
+
+void arraySum(int i,int sum){//1 10
+
+    sum =  sum + arr[i];
+    i++;
+    if(i<SIZE){ 
+        arraySum(i,sum);
+    }else{
+        printf(" %d ",sum);
+    }
+}
+
+
+
+arraySum(0,0); // i=0 , sum=0 
+
+
+
+
+int arraySum(int i){//1 10
+    int sum = 0; 
+    i++;
+    if(i<SIZE){ 
+       return sum +  arraySum(i);
+    } 
+}
+
+
+----------------------------------------------
+
+
+int a; //4 byte 
+
+
+
+& => address of 
+
+&a => address of a 
+
+
+-----------------------------------------------
+
+
+student -> information -> 
+
+name -> char[] 
+maths -> int 
+sci  -> int 
+eng  -> int 
+percentage -> float 
+grade  -> char 
+
+
+array    --> collection of same type of data type 
+structure --> collection of any type of data 
+
+
+struct keyword 
+
+struct variable can be access via structure obj/member using dot operator 
+
+
+5 students -> array of structure 
+
+
+struct student s[5]; -> s[0] s[1] .... s[4]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
