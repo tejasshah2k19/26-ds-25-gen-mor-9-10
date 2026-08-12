@@ -576,7 +576,7 @@ structure --> collection of any type of data
 
 struct keyword 
 
-struct variable can be access via structure obj/member using dot operator 
+struct variable can be access via structure obj/member using dot operator or arrow operator  
 
 
 5 students -> array of structure 
