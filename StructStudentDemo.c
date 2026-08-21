@@ -19,7 +19,7 @@ void getData()
     {
         printf("Enter name and marks of three subjects");
         scanf("%s%d%d%d", &s[i].name, &s[i].maths, &s[i].eng, &s[i].sci);
-        //perc grade 
+        // perc grade
     }
 }
 
@@ -40,15 +40,14 @@ void calcGradePerc()
     }
 }
 
-void display(){
+void display()
+{
     printf("\nName\tMaths\tSci\tEng\tPerc\tGrade\n");
     for (int i = 0; i < SIZE; i++)
     {
-        printf("%s\t%d\t%d\t%d\t%f\t%c\n",  s[i].name,  s[i].maths,  s[i].eng, s[i].sci,s[i].perc,s[i].grade);
+        printf("%s\t%d\t%d\t%d\t%f\t%c\n", s[i].name, s[i].maths, s[i].eng, s[i].sci, s[i].perc, s[i].grade);
     }
 }
-
-
 
 int main()
 {
@@ -58,25 +57,19 @@ int main()
 
     struct student *p;
 
-     
     // getData();
     // calcGradePerc();
-    // display(); 
+    // display();
 
     // printf("Enter name and marks of three subjects : ");
     // scanf("%s%d%d%d",&p.name,&p.maths,&p.sci,&p.eng);
 
     // printf("\nName = %s\nMaths = %d\nSci = %d\nEng = %d\n",p.name,p.maths,p.sci,p.eng);
 
-
-
-
     printf("Enter name and marks of three subjects : ");
-    scanf("%s%d%d%d",&p->name,&p->maths,&p->sci,&p->eng);
+    scanf("%s%d%d%d", &p->name, &p->maths, &p->sci, &p->eng);
 
-    printf("\nName = %s\nMaths = %d\nSci = %d\nEng = %d\n",p->name,p->maths,p->sci,p->eng);
-
-
+    printf("\nName = %s\nMaths = %d\nSci = %d\nEng = %d\n", p->name, p->maths, p->sci, p->eng);
 
     return 0;
 }

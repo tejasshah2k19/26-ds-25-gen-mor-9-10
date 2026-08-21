@@ -585,15 +585,52 @@ struct variable can be access via structure obj/member using dot operator or arr
 struct student s[5]; -> s[0] s[1] .... s[4]
 
 
+-------------------------------------
+
+int a ; // 4 byte 
 
 
 
+void main(){
+    int a; //4 byte 
+
+}// release 
+
+allocate 
+release 
+
+Dynamic memory allocation 
+
+int a[5]; // fix size 
+
+++ 
+-- 
+
+array ->5 -> use -> allocate -> 5 -> allocate 5 -> 7 release 
 
 
 
+allocation -> 
+    calloc()  --> multiple block with same size 
+    malloc() --> single 
+
+release -> 
+    free() 
+
+resize -> 
+    realloc() 
+
+stdlib.h 
+
+-------------------------------------------------------------------
+
+create mark sheet of students =>  DMA 
+
+Name Maths Sci  Eng  Perc Grade 
+Rock 55    55   55   55   P 
 
 
-
+-------------------------------------------------------------------
 
 
 
