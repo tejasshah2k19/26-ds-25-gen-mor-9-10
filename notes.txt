@@ -632,7 +632,14 @@ Rock 55    55   55   55   P
 
 -------------------------------------------------------------------
 
+linked list -> 
 
+    node 
+
+    data -> numbers-> int 
+    next -> address -> pointer 
+
+    
 
 
 
