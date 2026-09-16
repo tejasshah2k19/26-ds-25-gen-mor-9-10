@@ -642,8 +642,46 @@ linked list ->
     
 
 
+------------------------------------------------
+node -> 
 
 
+struct node{
+
+};
+
+
+memory -> calloc , malloc 
+
+calloc -> multiple block with same size 
+malloc -> single block 
+
+------------------------------------------------
+
+uniq characters --> 
+
+
+[10]->[20]->[30]->[40]
+head              last 
+
+double ->
+    next address 
+    prev address 
+    data 
+
+
+struct node {
+    int data; 
+    struct node *next; 
+    struct node *prev; 
+};
+
+----------------------------------------------------------------------------------
+take 7 numbers from user and insert into LinkedList 
+1) print all 7 numbers 1 by 1 
+2) find out max numbers from list 
+3) find sum of all numbers from list. 
+----------------------------------------------------------------------------------
 
 
 
