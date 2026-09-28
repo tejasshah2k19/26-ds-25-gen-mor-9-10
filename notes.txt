@@ -776,7 +776,37 @@ Task : 90 60 80 70 20 30 25 110 17 100
 int data; 
 
 
+node --> 
+
+
+                         node 
+                left               right 
+
+                max  2 child --> binary tree 
+
+50  60  40  80  30  45  90  15  20 
+
+BST : Binary Search Tree 
+
+1) max 2 child 
+2) child > Parent : right 
+3) child < Parent : left 
+
+-----------------------------------------------------------------------------------------------------------
 
 
 
+Tree Travesal :- 
+
+    InOrder         Left - Root - Right 
+    PreOrder        Root - Left - Right 
+    PostOrder       Left - Right - Root 
+
+
+
+    In Order -> Left - Root - Right 
+                15 20 30 40 45  50 60 80 90 
+
+    Pre Order --> Root Left  Right 
+    
 
