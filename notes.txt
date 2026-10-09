@@ -809,4 +809,93 @@ Tree Travesal :-
 
     Pre Order --> Root Left  Right 
     
+    Post Order ---> Left   -   Right    -    Root 
 
+
+
+--------------------------------------------------------------------------------------------------------------
+
+BST ->
+
+        insert --- add ---> 
+        display --> Travesal -> 
+                    in Order   ---> Left - Root - Right 
+                    Pre Order  ---> Root - left - right  
+                    Post Order ---> left - right - root 
+
+        delete --> node|value 
+
+            1) 0 child 
+            2) 1 child 
+            3) 2 child { inOrder Successor R  , inOrder Predecessor  L  }
+
+---------------------------------------------------------------------------------------------
+
+
+
+80  60  120 55  90  35  110   130   45 
+
+
+q1-BST -> tree 
+            
+
+q2-insert(99) -> tree 
+
+            
+q3-
+PreOrder -> X X X X X X X 
+PostOrder ->  X X X X X x   
+
+q-4
+delete(90) 
+delete(110) -> tree 
+
+       
+q-5
+PreOrder -> X X X X 
+ 
+
+----------------------------------------- 
+
+AVL 
+    1) BST 
+    2) Node Balance Factor [ -1 0 1 ]
+
+
+
+    BF | Node | = L(h) - R(h) 
+
+
+    imbalance -> rotate 
+
+    1) RR  -----> single rotation : left rotate  
+    2) LL  -----> single rotation : right rotate 
+    3) RL  -----> double rotation : right rotate left rotate 
+    4) LR  ---->  double rotation : left  rotate {H 0.5} right rotate {1}
+
+
+
+
+
+    10 20 30 40 50 
+
+
+
+PRACT :
+
+50, 30, 70, 20, 40, 60, 80
+
+50, 25, 75, 10, 30, 60, 80, 5, 15, 27, 35, 26
+
+30, 15, 50, 10, 20, 40, 60,5, 12, 18, 25, 35, 45, 55, 70,3, 2, 1
+
+
+
+
+PRACT 2 : 
+
+40, 20, 60, 10, 30, 50, 70, 5, 2
+
+100, 50, 150, 25, 75, 125, 175, 10, 5, 1
+
+15, 10, 20, 8, 12, 16, 25, 6, 11, 13, 27, 5
