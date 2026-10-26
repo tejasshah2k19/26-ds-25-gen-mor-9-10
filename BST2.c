@@ -34,6 +34,17 @@ struct node *addNode(struct node *root, int val) // 90 , 150
     return root;
 }
 
+
+void inOrder(struct node *root)
+{
+    if(root!=NULL){
+        inOrder(root->left);
+        printf(" %d ",root->data);
+        inOrder(root->right);       
+    }
+}
+
+
 int main()
 {
 
@@ -43,14 +54,17 @@ int main()
     addNode(root, 30);
     addNode(root, 80);
     addNode(root, 200);
+    addNode(root,30);
 
-    printf("\n %d ", root->data); // 90
+    // printf("\n %d ", root->data); // 90
 
-    printf("\n %d ", root->left->data); // 70
+    // printf("\n %d ", root->left->data); // 70
 
-    printf("\n %d ", root->right->data); // 150
+    // printf("\n %d ", root->right->data); // 150
 
-    printf("\n %d ", root->right->right->data); // 200
+    // printf("\n %d ", root->right->right->data); // 200
+
+    inOrder(root);
 
     return 0;
 }
