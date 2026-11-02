@@ -44,6 +44,16 @@ void inOrder(struct node *root)
     }
 }
 
+struct node *inOrderSuccessor(struct node *root)
+{
+
+    if (root != NULL)
+    {
+        inOrderSuccessor(root->left);
+    }
+    return root;
+}
+
 struct node *deleteNode(struct node *root, int key)
 {
     if (root == NULL)
@@ -55,29 +65,33 @@ struct node *deleteNode(struct node *root, int key)
         if (root->left == NULL && root->right == NULL)
         {
             printf("\n0 Child");
-
-            return NULL; 
+            free(root);
+            return NULL;
         }
         else if (root->left == NULL && root->right != NULL)
         {
+            struct node *tmp = root->right;
             printf("\n1 child : right present");
-            return root->right; 
+            free(root);
+            return tmp;
         }
         else if (root->left != NULL && root->right == NULL)
         {
+            struct node *tmp = root->left;
             printf("\n1 child : left present");
-            return root->left; 
+            free(root);
+            return tmp;
         }
         else if (root->left != NULL && root->right != NULL)
         {
             printf("\n2 child");
-            //InOrderSuccessor 
-            //InOrderPredecessor 
-            struct node *smallest  = inOrderSuccessor(root->right); 
-            printf("\nnew root -> %d ",smallest->data);
-            root->data = smallest->data; 
-            deleteNode(root->right,smallest->data); 
-            return smallest; 
+            // InOrderSuccessor
+            // InOrderPredecessor
+            struct node *smallest = inOrderSuccessor(root->right);
+            printf("\nnew root -> %d ", smallest->data);
+            root->data = smallest->data;             // replace value
+            deleteNode(root->right, smallest->data); // delete that smallest node from right side
+            return smallest;
         }
     }
     else if (key < root->data)
@@ -91,16 +105,6 @@ struct node *deleteNode(struct node *root, int key)
 
     return root;
 }
-
-struct node * inOrderSuccessor(struct node *root){
-
-    if(root!=NULL){
-        inOrderSuccessor(root->left);
-    }
-    return root; 
-
-}
-
 
 int main()
 {
@@ -121,7 +125,7 @@ int main()
     // printf("\n %d ", root->right->right->data); // 200
 
     inOrder(root);
-    deleteNode(root, 80); //
+    deleteNode(root, 90); //
     printf("\nAfter Deletion : \n");
     inOrder(root);
 
